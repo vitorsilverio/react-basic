@@ -1,4 +1,10 @@
-import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from "react";
 import { Box, ThemeProvider } from "@mui/material";
 
 import { LightTheme, DarkTheme } from "../themes";
@@ -11,7 +17,7 @@ interface ThemeContextData {
 const ThemeContext = createContext({} as ThemeContextData);
 
 export const useAppThemeContext = () => {
-    return useContext(ThemeContext)
+  return useContext(ThemeContext);
 };
 
 export const AppThemeProvider: React.FC = ({ children }) => {

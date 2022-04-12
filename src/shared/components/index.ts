@@ -1,2 +1,2 @@
-export * from './menu-superior/MenuSuperior';
-export * from './theme-switch/ThemeSwitch';
+export * from "./menu-superior/MenuSuperior";
+export * from "./theme-switch/ThemeSwitch";
