@@ -1,8 +1,14 @@
+import { Box, Typography } from '@mui/material';
+import { LayoutBase } from '../../shared/layouts';
+
 export const NotFound = () => {
   return (
-    <div>
-      <h1>404</h1>
-      <p>Page not found</p>
-    </div>
+    <LayoutBase titulo='Página não encontrada'>
+      <Box>
+        <Typography variant='body1' component='p'>
+          Erro 404 - O recurso especificado não existe.
+        </Typography>
+      </Box>
+    </LayoutBase>
   );
 };
