@@ -11,7 +11,7 @@ export const LayoutBase: React.FC<LayoutBaseProps> = ({ children, titulo }) => {
       <MenuSuperior />
       <Box display="flex" flexDirection="column" gap={1} height="100%">
         <Box padding={2}>
-          <Typography variant="h5" component="h1" sx={{color: "text.primary" }}>
+          <Typography variant="h5" component="h1" sx={{ color: "text.primary" }}>
             {titulo}
           </Typography>
         </Box>
