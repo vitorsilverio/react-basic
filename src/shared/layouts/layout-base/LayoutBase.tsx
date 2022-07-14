@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { MenuSuperior } from "../../components";
 
 interface LayoutBaseProps {
+  children: React.ReactNode;
   titulo: string;
 }
 

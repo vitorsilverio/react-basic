@@ -20,7 +20,11 @@ export const useAppThemeContext = () => {
   return useContext(ThemeContext);
 };
 
-export const AppThemeProvider: React.FC = ({ children }) => {
+interface IThemeProvider{
+  children: React.ReactNode;
+}
+
+export const AppThemeProvider: React.FC<IThemeProvider> = ({ children }) => {
   const systemTheme = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
   const [themeName, setThemeName] = useState<"light" | "dark">(systemTheme);
   const toggleTheme = useCallback(() => {
